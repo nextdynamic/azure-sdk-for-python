@@ -24,6 +24,10 @@ USAGE:
 import os
 
 
+os.environ["AZURE_SEARCH_SERVICE_ENDPOINT"] = "https://cog-search-nonprod-eastus-001.search.windows.net"
+os.environ["AZURE_SEARCH_INDEX_NAME"] = "cogsrch-py-dlt-index"
+os.environ["AZURE_SEARCH_API_KEY"] = "YhCVvPlgqPTzJ7boyEIdf35vzoj7mNhic0ioCt6fB8AzSeCIwIBN"
+
 def authentication_with_api_key_credential():
     # [START create_search_client_with_key]
     from azure.core.credentials import AzureKeyCredential
